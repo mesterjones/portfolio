@@ -372,7 +372,7 @@
                       <v-card-title class="text-h5 font-weight-medium pa-4">Falster Klatreklubs hjemmeside</v-card-title>
                       <v-card-text class="flex-grow-1 pa-4">
                         <p class="text-grey-darken-1">
-                          www.falster-klatreklub.dk - En fuldt responsiv og SEO optimeret hjemmeside bygget til falster klatreklub. Bygget med Nuxt.js og Vue. 
+                          www.falster-klatreklub.dk - En fuldt responsiv og SEO optimeret hjemmeside bygget til falster klatreklub med online tilmeldingsform. Bygget med Nuxt.js og Vue. 
 
                         </p>
                       </v-card-text>
