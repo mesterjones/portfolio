@@ -231,17 +231,18 @@
                   class="d-flex flex-column pa-4" 
                   elevation="0" 
                   style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
-                  @click="$router.push('/where-to-surf')"
-                  :style="{
-                    cursor: 'pointer',
-                    transition: 'transform 0.2s ease-in-out'
-                  }"
-                  :class="'hover-scale'"
                 >
-                  <v-card-title class="text-h5 font-weight-medium pa-4">WHERE TO SURF?</v-card-title>
+                  <v-card-title class="text-h5 font-weight-medium pa-4">CREATOR</v-card-title>
                   <v-card-text class="flex-grow-1 pa-4">
                     <p class="text-grey-darken-1">
-                      Et privat projekt, som tager vejrdata fra OpenWeather API og fortæller mig hvor på Lolland-Falster det er bedst at surfe lige nu.
+                      En online platform til udfyldning
+                       af data med live validering af det
+                       indsatte data. Har lettet
+                       forretningsgange i flere
+                       afdelinger og fjernet brug af
+                       lokale excel filer, som før blev
+                       brugt til at håndtere stamdata.
+                       Bygget med Vue.js og Python.
                     </p>
                   </v-card-text>
                 </v-card>
@@ -322,7 +323,7 @@
                 </div>
                 <v-row>
                   <v-col cols="12" md="6">
-                    <v-card height="100%" class="d-flex flex-column pa-4" elevation="0" 
+                    <v-card height="100%" class="d-flex flex-column pa-4 rounded-lg" elevation="0" 
                     style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
                     @click="$router.push('/where-to-surf')"
                     :style="{
@@ -343,10 +344,42 @@
                       src="@/assets/kitesun.png"
                       alt="Kitesurfing"
                       class="rounded-lg"
+                      min-height="200px"
                       cover
                     />
                   </v-col>
                 </v-row>
+                <v-row>
+                  <v-col cols="12" md="6" class="d-flex align-center">
+                    <v-img
+                      src="@/assets/bouldering1.webp"
+                      alt="Boulderingwall"
+                      class="rounded-lg"
+                      max-height="200px"
+                      cover
+                    />
+                  </v-col>
+                  <v-col cols="12" md="6">
+                    <v-card height="100%" class="d-flex flex-column pa-4 rounded-lg" elevation="0" 
+                    style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
+                    href="https://falster-klatreklub.dk"
+                    target="_blank"
+                    :style="{
+                      cursor: 'pointer',
+                      transition: 'transform 0.2s ease-in-out'
+                    }"
+                    :class="'hover-scale'">
+                      <v-card-title class="text-h5 font-weight-medium pa-4">Falster Klatreklubs hjemmeside</v-card-title>
+                      <v-card-text class="flex-grow-1 pa-4">
+                        <p class="text-grey-darken-1">
+                          www.falster-klatreklub.dk - En fuldt responsiv og SEO optimeret hjemmeside bygget til falster klatreklub. Bygget med Nuxt.js og Vue. 
+
+                        </p>
+                      </v-card-text>
+                    </v-card>
+                  </v-col>
+                </v-row>
+
               </div>
             </v-card>
           </v-col>
