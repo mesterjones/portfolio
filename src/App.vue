@@ -6,14 +6,50 @@
       color="grey-lighten-4"
       class="px-4"
     >
-      <v-app-bar-title class="text-grey-darken-3">Jonas Vagner Riis</v-app-bar-title>
+      <v-app-bar-title class="text-grey-darken-2 text-h6 d-none d-sm-flex">JONAS VAGNER RIIS</v-app-bar-title>
+      <v-app-bar-title class="text-grey-darken-2 text-subtitle-1 d-flex d-sm-none">JONAS VAGNER RIIS</v-app-bar-title>
       <v-spacer></v-spacer>
-      <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('hero')">Home</v-btn>
-      <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('about')">About</v-btn>
-      <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('cases')">Cases</v-btn>
-      <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('contact')">Contact</v-btn>
-      <v-btn variant="text" class="text-grey-darken-2" @click="$router.push('/where-surf')">Where To Surf?</v-btn>
+      
+      <!-- Desktop Navigation -->
+      <div class="d-none d-sm-flex">
+        <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('hero')">Home</v-btn>
+        <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('about')">About</v-btn>
+        <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('cases')">Cases</v-btn>
+        <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('contact')">Contact</v-btn>
+        <v-btn variant="text" class="text-grey-darken-2" @click="$router.push('/where-surf')">Where To Surf?</v-btn>
+      </div>
+      
+      <!-- Mobile Navigation Button -->
+      <v-app-bar-nav-icon
+        class="d-flex d-sm-none"
+        @click="drawer = !drawer"
+      ></v-app-bar-nav-icon>
     </v-app-bar>
+
+    <!-- Mobile Navigation Drawer -->
+    <v-navigation-drawer
+      v-model="drawer"
+      temporary
+      location="right"
+    >
+      <v-list>
+        <v-list-item @click="scrollToSection('hero'); drawer = false">
+          <v-list-item-title>Home</v-list-item-title>
+        </v-list-item>
+        <v-list-item @click="scrollToSection('about'); drawer = false">
+          <v-list-item-title>About</v-list-item-title>
+        </v-list-item>
+        <v-list-item @click="scrollToSection('cases'); drawer = false">
+          <v-list-item-title>Cases</v-list-item-title>
+        </v-list-item>
+        <v-list-item @click="scrollToSection('contact'); drawer = false">
+          <v-list-item-title>Contact</v-list-item-title>
+        </v-list-item>
+        <v-list-item @click="$router.push('/where-surf'); drawer = false">
+          <v-list-item-title>Where To Surf?</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
 
     <!-- Main Content -->
     <v-main class="bg-grey-lighten-4">
@@ -36,6 +72,7 @@
 export default {
   name: 'App',
   data: () => ({
+    drawer: false,
   }),
   methods: {
     async scrollToSection(sectionId) {
