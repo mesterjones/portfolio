@@ -15,7 +15,7 @@
                   JONAS VAGNER RIIS
                 </div>
                 <h1 class="text-h4 text-md-h3 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
-                  DIGITAL CREATOR AND<br>
+                  DATA SPECIALIST AND<br>
                   WATERSPORT ENTHUSIAST
                 </h1>
                 <p class="text-body-1 text-md-h6 font-weight-light mb-6 mb-md-12 text-grey-darken-1">
@@ -24,32 +24,13 @@
                   forretningsforståelse skaber jeg effektive og brugervenlige værktøjer, der
                   omsætter data til indsigt og optimerer arbejdsgange.
                 </p>
-                <p class="text-body-1 text-md-h6 font-weight-light mb-4 mb-md-8 text-grey-darken-1">
-                  Kontakt mig, så kan vi tage en snak om, hvad jeg kan hjælpe dig med!
-                </p>
-                <div class="d-flex flex-column flex-sm-row gap-4">
-                  <v-btn
-                    color="primary"
-                    size="large"
-                    variant="flat"
-                    @click="scrollToSection('contact')"
-                    class="px-6 px-md-8 mb-3 mb-sm-0"
-                  >
-                    Kontakt mig
-                  </v-btn>
-                  <v-btn
-                    href="https://linkedin.com/in/jonas-riis"
-                    target="_blank"
-                    color="primary"
-                    size="large"
-                    variant="outlined"
-                    class="px-6 px-md-8 text-none"
-                  >
-                    <v-icon start class="me-2">
-                      mdi-linkedin
-                    </v-icon>
-                    in/jonas-riis
-                  </v-btn>
+                <div class="d-flex flex-column flex-sm-row justify-center align-center gap-4">
+                  <a href="https://linkedin.com/in/jonas-riis" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <v-icon size="36" color="primary">mdi-linkedin</v-icon>
+                  </a>
+                  <a href="https://github.com/mesterjones" target="_blank" rel="noopener" aria-label="GitHub">
+                    <v-icon size="36" color="primary">mdi-github</v-icon>
+                  </a>
                 </div>
               </div>
               <div class="profile-image-container mt-6 mt-md-0">
@@ -182,6 +163,18 @@
             </v-card>
             <!-- Application Development Section with increased spacing -->
             <v-row class="gap-3 gap-md-6">
+              <v-col cols="12">
+                <v-card height="100%" class="d-flex flex-column pa-3 pa-md-4" elevation="0" style="background: linear-gradient(135deg, #eceff1, #e0e0e0);">
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">STOCK TOOL</v-card-title>
+                  <v-card-text class="flex-grow-1 pa-2 pa-md-4">
+                    <p class="text-body-2 text-md-body-1 text-grey-darken-1">
+                      En intern webapplikation, der giver et samlet og klart overblik over centrale lager- og disponeringsdata.
+                      Bruges til ordrebestilling, styring af lagerdata og supply chain management i organisationen.
+                      Bygget med Python (FastAPI) i backend samt Node.js, Vue og Vuetify i frontend.
+                    </p>
+                  </v-card-text>
+                </v-card>
+              </v-col>
               <!-- Stock Reporting Automation -->
               <v-col cols="12" sm="6" md="4">
                 <v-card height="100%" class="d-flex flex-column pa-3 pa-md-4" elevation="0" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
@@ -391,97 +384,7 @@
         </v-row>
       </v-container>
     </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <v-container class="py-4 py-md-8">
-        <v-row justify="center" align="center">
-          <v-col cols="12" md="10">
-            <v-card
-              class="pa-4 pa-md-8 rounded-lg"
-              elevation="0"
-              color="transparent"
-            >
-              <div class="text-grey-lighten-1 text-subtitle-1 text-md-h5 font-weight-light mb-2 mb-md-4">
-                CONTACT
-              </div>
-              <h2 class="text-h4 text-md-h3 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
-                Lad os tage en snak
-              </h2>
-              <p class="text-body-1 text-md-h6 font-weight-light mb-4 mb-md-8 text-grey-darken-1">
-                Udfyld formularen nedenfor, så vender jeg tilbage hurtigst muligt.
-              </p>
-              
-              <v-form ref="contactForm" @submit.prevent="submitForm" class="mt-4 mt-md-6">
-                <v-row>
-                  <v-col cols="12" md="6">
-                    <v-text-field
-                      v-model="formData.name"
-                      label="Navn"
-                      variant="outlined"
-                      density="comfortable"
-                      bg-color="white"
-                      required
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12" md="6">
-                    <v-text-field
-                      v-model="formData.email"
-                      label="Email"
-                      type="email"
-                      variant="outlined"
-                      density="comfortable"
-                      bg-color="white"
-                      required
-                    ></v-text-field>
-                  </v-col>
-                  <v-col cols="12">
-                    <v-textarea
-                      v-model="formData.message"
-                      label="Besked"
-                      variant="outlined"
-                      density="comfortable"
-                      bg-color="white"
-                      rows="4"
-                      required
-                    ></v-textarea>
-                  </v-col>
-                  <v-col cols="12">
-                    <v-btn
-                      :loading="loading"
-                      color="primary"
-                      size="large"
-                      type="submit"
-                      variant="flat"
-                      class="px-6 px-md-8"
-                    >
-                      Send besked
-                    </v-btn>
-                  </v-col>
-                </v-row>
-              </v-form>
-
-              <v-alert
-                v-if="success"
-                type="success"
-                variant="tonal"
-                class="mt-4"
-              >
-                Tak for din besked! Jeg vender tilbage hurtigst muligt.
-              </v-alert>
-              
-              <v-alert
-                v-if="error"
-                type="error"
-                variant="tonal"
-                class="mt-4"
-              >
-                Der opstod en fejl. Prøv venligst igen.
-              </v-alert>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
+  
   </div>
 </template>
 

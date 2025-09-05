@@ -15,7 +15,6 @@
         <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('hero')">Home</v-btn>
         <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('about')">About</v-btn>
         <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('cases')">Cases</v-btn>
-        <v-btn variant="text" class="text-grey-darken-2" @click="scrollToSection('contact')">Contact</v-btn>
         <v-btn variant="text" class="text-grey-darken-2" @click="$router.push('/where-surf')">Where To Surf?</v-btn>
       </div>
       
@@ -41,9 +40,6 @@
         </v-list-item>
         <v-list-item @click="scrollToSection('cases'); drawer = false">
           <v-list-item-title>Cases</v-list-item-title>
-        </v-list-item>
-        <v-list-item @click="scrollToSection('contact'); drawer = false">
-          <v-list-item-title>Contact</v-list-item-title>
         </v-list-item>
         <v-list-item @click="$router.push('/where-surf'); drawer = false">
           <v-list-item-title>Where To Surf?</v-list-item-title>
