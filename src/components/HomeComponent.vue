@@ -14,7 +14,7 @@
                 <div class="text-grey-lighten-1 text-subtitle-1 text-md-h5 font-weight-light mb-2 mb-md-4">
                   JONAS VAGNER RIIS
                 </div>
-                <h1 class="text-h4 text-md-h3 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
+                <h1 class="text-h5 text-md-h5 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
                   DATA SPECIALIST AND<br>
                   WATERSPORT ENTHUSIAST
                 </h1>
@@ -65,84 +65,6 @@
       </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about">
-      <v-container class="py-4 py-md-8">
-        <v-row align="center" justify="center">
-          <v-col cols="12" md="10">
-            <v-card
-              class="pa-4 pa-md-8 rounded-lg"
-              elevation="0"
-              color="transparent"
-            >
-              <!-- About Header -->
-              <div class="text-grey-lighten-1 text-subtitle-1 text-md-h5 font-weight-light mb-2 mb-md-4">
-                ABOUT
-              </div>
-              
-              <!-- Main Content Row -->
-              <v-row>
-                <!-- Text Column -->
-                <v-col cols="12" md="8">
-                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1">
-                    Jeg er 34 år gammel, far til 3, bosat i Nykøbing F.
-                  </p>
-                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
-                    Som uddannet Prof. Bach. I International Handel og Markedsføring, og med 10+ års erfaring
-                    med virksomhedsdrift og ledelse, har jeg udviklet en solid forretningsforståelse. Dette
-                    kombinerer jeg med tekniske færdigheder, hvor jeg de seneste 3 år har specialiseret mig i
-                    dataanalyse samt udvikling af digitale løsninger.
-                  </p>
-                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
-                    Jeg bliver begejstret når jeg med teknologi kan hjælpe med at forbedre eller eliminere
-                    manuelle forretningsprocesser.
-                  </p>
-                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
-                    Privat elsker jeg kitesurfing og klatring og kan ofte findes på vandet ved kitespot farø eller i
-                    den lokale bouldering klub.
-                  </p>
-                </v-col>
-
-                <!-- Skills and Image Column -->
-                <v-col cols="12" md="4">
-                  <v-img
-                    class="rounded-lg mt-4"
-                    src="@/assets/surfing.jpg"
-                    alt="Person surfing"
-                    cover
-                    height="250"
-                    height-md="300"
-                  />
-                </v-col>
-              </v-row>
-              <!-- Updated Skills Section -->
-              <v-card
-                class="mt-4 mt-md-8 pa-4 pa-md-6" 
-                style="background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);"
-                elevation="0"
-                color="grey-lighten-4"
-                rounded="lg"
-              >
-                <h3 class="text-subtitle-1 text-md-h6 font-weight-medium mb-2 mb-md-4">Primære færdigheder</h3>
-                <div class="d-flex flex-wrap gap-1 gap-md-2">
-                  <v-chip
-                    v-for="skill in primarySkills"
-                    :key="skill"
-                    color="primary"
-                    variant="flat"
-                    class="ma-1"
-                    size="small"
-                    size-md="default"
-                  >
-                    {{ skill }}
-                  </v-chip>
-                </div>
-              </v-card>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </section>
     <!-- Projects Section -->
     <section id="cases">
       <v-container class="py-4 py-md-8">
@@ -156,7 +78,7 @@
                 <div class="text-grey-lighten-1 text-subtitle-1 text-md-h5 font-weight-light mb-2 mb-md-4">
                   CASES / WORK
                 </div>
-                <h1 class="text-h4 text-md-h3 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
+                <h1 class="text-h4 text-md-h5 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
                   Applikationsudvikling
                 </h1>
               </div>                 
@@ -164,43 +86,74 @@
             <!-- Application Development Section with increased spacing -->
             <v-row class="gap-3 gap-md-6">
               <v-col cols="12">
-                <v-card height="100%" class="d-flex flex-column pa-3 pa-md-4" elevation="0" style="background: linear-gradient(135deg, #eceff1, #e0e0e0);">
-                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">STOCK TOOL</v-card-title>
-                  <v-card-text class="flex-grow-1 pa-2 pa-md-4">
-                    <p class="text-body-2 text-md-body-1 text-grey-darken-1">
-                      En intern webapplikation, der giver et samlet og klart overblik over centrale lager- og disponeringsdata.
-                      Bruges til ordrebestilling, styring af lagerdata og supply chain management i organisationen.
-                      Bygget med Python (FastAPI) i backend samt Node.js, Vue og Vuetify i frontend.
-                    </p>
-                  </v-card-text>
-                </v-card>
+                <v-card height="100%" class="d-flex flex-column pa-3 pa-md-6" elevation="0" style="background: linear-gradient(135deg, #eceff1, #e0e0e0);">
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-0 mb-2">
+                          STOCK REPORT
+                        </v-card-title>
+                  <v-row class="align-center">
+                      <!-- Venstre kolonne: Tekst -->
+                      <v-col cols="12" md="12">
+
+                        <v-card-text class="pa-0">
+                          <p class="text-body-2 text-md-body-1 text-grey-darken-1">
+                            <strong>Use Case:</strong><br>
+                            Brugervenlig udstilling af stock management data, som giver et hurtigt overblik over lagerstatus, disponeringer og ordrer. <br><br>
+                            Bruges til ordrebestilling, styring af lagerdata og supply chain management i organisationen. <br><br>
+
+                            <strong>Frontend</strong> Vue.js samt Vuetify <br><br>
+
+                            <strong>Backend:</strong> Python FASTAPI med forbindelse til lokal MS SQL Server database. <br><br>
+
+                            Dertil har jeg bygget en service der kontinuerligt opdaterer data fra en remote SQL server database og udfører nødvendig databehandling i pandas, som så skriver til lokal SQL Server, så data altid er opdateret.
+                            
+                          </p>
+                        </v-card-text>
+                      </v-col>
+
+                      <!-- Højre kolonne: Billede -->
+                      <v-col cols="12" md="12" class="d-flex justify-end">
+                        <v-img
+                          src="@/assets/stocktool.png"
+                          alt="Stock Tool Screenshot"
+                          class="rounded-lg"
+                          cover
+                        />
+                      </v-col>
+                    </v-row>
+                  </v-card>
               </v-col>
               <!-- Stock Reporting Automation -->
-              <v-col cols="12" sm="6" md="4">
+              <v-col cols="12" sm="6" md="6">
                 <v-card height="100%" class="d-flex flex-column pa-3 pa-md-4" elevation="0" style="background: linear-gradient(135deg, #a1c4fd, #c2e9fb);">
-                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">STOCK REPORTING</v-card-title>
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">STOCK COUNT REPORTING</v-card-title>
                   <v-card-text class="flex-grow-1 pa-2 pa-md-4">
                     <p class="text-body-2 text-md-body-1 text-grey-darken-1">
                       En applikation som læser
                       optællingsdata, visualiserer
                       dataen og opretter en
-                      optællingsrapport.
+                      optællingsrapport til brugeren.<br><br>
 
-                      Har fjernet brugen af excel filer
+                      Har fjernet brugen af manuel databehandling i Excel
                       som før blev brugt til at lave
                       rapporter på lageroptællingen
                       til bl.a. revisorer og intern
-                      ledelse. Bygget med Vue.js og
-                      Python
+                      ledelse.
                     </p>
                   </v-card-text>
+                  <v-img
+                    src="@/assets/stock_count_tool.png"
+                    alt="Stock Reporting Screenshot"
+                    class="rounded-lg mt-4"
+                    contain
+                    height="300"
+                  ></v-img>
                 </v-card>
               </v-col>
 
               <!-- Data Validation Engine -->
-              <v-col cols="12" sm="6" md="4">
+              <v-col cols="12" sm="6" md="6">
                 <v-card height="100%" class="d-flex flex-column pa-3 pa-md-4" elevation="0" style="background: linear-gradient(135deg, #ff9a9e, #fad0c4);">
-                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">DATA VALIDATOR</v-card-title>
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">ANALYSELAG</v-card-title>
                   <v-card-text class="flex-grow-1 pa-2 pa-md-4">
                     <p class="text-body-2 text-md-body-1 text-grey-darken-1">
                       En applikation som læser og
@@ -212,35 +165,38 @@
                       og fejl, hvis noget data ikke
                       overholder forretningsregler,
                       eller afviger væsentlig fra
-                      eksisterende database.
+                      eksisterende database. <br><br>
+                      
+                      <strong>Frontend: </strong>
+                      React + Tailwind <br><br>
 
-                      Bygget med React og Python
+                      <strong>Backend: </strong> FASTAPI med forbindelse til MS SQL Server for validering af data
                     </p>
                   </v-card-text>
                 </v-card>
               </v-col>
 
               <!-- CREATOR Portal -->
-              <v-col cols="12" sm="6" md="4">
+              <v-col cols="12" sm="6" md="12">
                 <v-card 
                   height="100%" 
                   class="d-flex flex-column pa-3 pa-md-4" 
                   elevation="0" 
                   style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
                 >
-                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">CREATOR</v-card-title>
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">SCL-Reporting</v-card-title>
                   <v-card-text class="flex-grow-1 pa-2 pa-md-4">
                     <p class="text-body-2 text-md-body-1 text-grey-darken-1">
-                      En online platform til udfyldning
-                       af data med live validering af det
-                       indsatte data. Har lettet
-                       forretningsgange i flere
-                       afdelinger og fjernet brug af
-                       lokale excel filer, som før blev
-                       brugt til at håndtere stamdata.
-                       Bygget med Vue.js og Python.
+                      En online platform som indeholder en række rapporter til brug til tilbagerapportering til ordrekontoret. Rapporterne trækker data fra remote SQL Server og og platformen giver brugerne adgang til at tilbagerapportere faktiske optællinger, som skrives til lokal SQL server. 
                     </p>
                   </v-card-text>
+                  <v-img
+                    src="@/assets/scl-reporting.png"
+                    alt="SCL Reporting Screenshot"
+                    class="rounded-lg mt-4"
+                    contain
+                    height="300"
+                  ></v-img>
                 </v-card>
               </v-col>
               <v-card
@@ -248,7 +204,7 @@
               elevation="0"
               color="transparent">
               <div class="flex-grow-1">
-                <h1 class="text-h4 text-md-h3 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
+                <h1 class="text-h4 text-md-h5 font-weight-bold mb-4 mb-md-6 text-grey-darken-3">
                   BI Rapportering
                 </h1>
                 <p class="text-body-1 text-md-h6 font-weight-light mb-4 mb-md-8 text-grey-darken-1">
@@ -379,6 +335,85 @@
                   </v-col>
                 </v-row>
               </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </section>
+
+        <!-- About Section -->
+        <section id="about">
+      <v-container class="py-4 py-md-8">
+        <v-row align="center" justify="center">
+          <v-col cols="12" md="10">
+            <v-card
+              class="pa-4 pa-md-8 rounded-lg"
+              elevation="0"
+              color="transparent"
+            >
+              <!-- About Header -->
+              <div class="text-grey-lighten-1 text-subtitle-1 text-md-h5 font-weight-light mb-2 mb-md-4">
+                ABOUT
+              </div>
+              
+              <!-- Main Content Row -->
+              <v-row>
+                <!-- Text Column -->
+                <v-col cols="12" md="8">
+                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1">
+                    Jeg er 34 år gammel, far til 3, bosat i Nykøbing F.
+                  </p>
+                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
+                    Som uddannet Prof. Bach. I International Handel og Markedsføring, og med 10+ års erfaring
+                    med virksomhedsdrift og ledelse, har jeg udviklet en solid forretningsforståelse. Dette
+                    kombinerer jeg med tekniske færdigheder, hvor jeg de seneste 3 år har specialiseret mig i
+                    dataanalyse samt udvikling af digitale løsninger.
+                  </p>
+                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
+                    Jeg bliver begejstret når jeg med teknologi kan hjælpe med at forbedre eller eliminere
+                    manuelle forretningsprocesser.
+                  </p>
+                  <p class="text-body-1 text-md-h6 font-weight-light text-grey-darken-1 mt-2 mt-md-4">
+                    Privat elsker jeg kitesurfing og klatring og kan ofte findes på vandet ved kitespot farø eller i
+                    den lokale bouldering klub.
+                  </p>
+                </v-col>
+
+                <!-- Skills and Image Column -->
+                <v-col cols="12" md="4">
+                  <v-img
+                    class="rounded-lg mt-4"
+                    src="@/assets/surfing.jpg"
+                    alt="Person surfing"
+                    cover
+                    height="250"
+                    height-md="300"
+                  />
+                </v-col>
+              </v-row>
+              <!-- Updated Skills Section -->
+              <v-card
+                class="mt-4 mt-md-8 pa-4 pa-md-6" 
+                style="background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);"
+                elevation="0"
+                color="grey-lighten-4"
+                rounded="lg"
+              >
+                <h3 class="text-subtitle-1 text-md-h6 font-weight-medium mb-2 mb-md-4">Primære færdigheder</h3>
+                <div class="d-flex flex-wrap gap-1 gap-md-2">
+                  <v-chip
+                    v-for="skill in primarySkills"
+                    :key="skill"
+                    color="primary"
+                    variant="flat"
+                    class="ma-1"
+                    size="small"
+                    size-md="default"
+                  >
+                    {{ skill }}
+                  </v-chip>
+                </div>
+              </v-card>
             </v-card>
           </v-col>
         </v-row>
