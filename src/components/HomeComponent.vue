@@ -279,12 +279,6 @@
                       class="project-card d-flex flex-column pa-3 pa-md-4 rounded-lg" 
                       elevation="0" 
                       style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
-                      @click="$router.push('/where-to-surf')"
-                      :style="{
-                        cursor: 'pointer',
-                        transition: 'transform 0.2s ease-in-out'
-                      }"
-                      :class="'hover-scale'"
                     >
                       <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">WHERE TO SURF?</v-card-title>
                       <v-card-text class="flex-grow-1 pa-2 pa-md-4">
