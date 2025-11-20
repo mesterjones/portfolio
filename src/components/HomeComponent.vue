@@ -102,7 +102,7 @@
 
                             <strong>Frontend</strong> Vue.js samt Vuetify <br><br>
 
-                            <strong>Backend:</strong> Python FASTAPI med forbindelse til lokal MS SQL Server database. <br><br>
+                            <strong>Backend:</strong> Python FastAPI med forbindelse til lokal MS SQL Server database. <br><br>
 
                             Dertil har jeg bygget en service der kontinuerligt opdaterer data fra en remote SQL server database og udfører nødvendig databehandling i pandas, som så skriver til lokal SQL Server, så data altid er opdateret.
                             
@@ -184,19 +184,38 @@
                   elevation="0" 
                   style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
                 >
-                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">SCL-Reporting</v-card-title>
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">
+                    SCL-Reporting
+                  </v-card-title>
+
                   <v-card-text class="flex-grow-1 pa-2 pa-md-4">
                     <p class="text-body-2 text-md-body-1 text-grey-darken-1">
                       En online platform som indeholder en række rapporter til brug til tilbagerapportering til ordrekontoret. Rapporterne trækker data fra remote SQL Server og og platformen giver brugerne adgang til at tilbagerapportere faktiske optællinger, som skrives til lokal SQL server. 
                     </p>
                   </v-card-text>
-                  <v-img
-                    src="@/assets/scl-reporting.png"
-                    alt="SCL Reporting Screenshot"
-                    class="rounded-lg mt-4"
-                    contain
-                    height="300"
-                  ></v-img>
+
+                  <!-- Billederne i en række -->
+                  <v-row class="mt-4" dense>
+                    <v-col cols="12" md="6">
+                      <v-img
+                        src="@/assets/t5.png"
+                        alt="SCL Reporting Screenshot"
+                        class="rounded-lg"
+                        contain
+                        height="300"
+                      ></v-img>
+                    </v-col>
+
+                    <v-col cols="12" md="6">
+                      <v-img
+                        src="@/assets/ns.png"
+                        alt="SCL Reporting Screenshot"
+                        class="rounded-lg"
+                        contain
+                        height="300"
+                      ></v-img>
+                    </v-col>
+                  </v-row>
                 </v-card>
               </v-col>
               <v-card
@@ -322,7 +341,7 @@
                       <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">Falster Klatreklubs hjemmeside</v-card-title>
                       <v-card-text class="flex-grow-1 pa-2 pa-md-4">
                         <p class="text-body-2 text-md-body-1 text-grey-darken-1">
-                          www.falster-klatreklub.dk - En fuldt responsiv og SEO optimeret hjemmeside bygget til falster klatreklub med online tilmeldingsform. Bygget med Nuxt.js og Vue. 
+                          www.falster-klatreklub.dk - En fuldt responsiv og SEO optimeret hjemmeside bygget til falster klatreklub med online tilmeldingsform. Bygget med Nuxt.js og Vue, hostet på Netlify.
                         </p>
                       </v-card-text>
                     </v-card>
@@ -437,8 +456,7 @@ export default {
         'Power BI',
         'DAX',
         'SQL',
-        'Power Query',
-        'LEAN'
+        'Power Query'
       ]
     };
   },
