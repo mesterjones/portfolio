@@ -84,6 +84,51 @@
               </div>                 
             </v-card>
             <!-- Application Development Section with increased spacing -->
+              <!-- CREATOR + Analyselag + TemplateAPI Portal -->
+              <v-row class="gap-3 gap-md-6">
+              <v-col cols="12" sm="12" md="12">
+                <v-card 
+                  height="100%" 
+                  class="d-flex flex-column pa-3 pa-md-4" 
+                  elevation="0" 
+                  style="background: linear-gradient(135deg, #a8e6cf, #dcedc1);"
+                >
+                  <v-card-title class="text-subtitle-1 text-md-h5 font-weight-medium pa-2 pa-md-4">
+                    CREATOR + Analyselag
+                  </v-card-title>
+
+                  <v-card-text class="flex-grow-1 pa-2 pa-md-4">
+                    <p class="text-body-2 text-md-body-1 text-grey-darken-1">
+                      Da jeg startede i Scandlines, var der store udfordringer med fejl i masterdata, 
+                      hvilket medførte forstyrrelser og frustrationer blandt medarbejdere, særligt i driften, 
+                      men også på tværs af afdelinger i organisationen. <br><br>
+
+                      Efter en omfattende datarengøring af databasen, gik vi i gang med projektet omhandlende at sikre valid data i ERP-systemet fremadrettet, 
+                      hvilket blev til to webapplikationer, CREATOR og Analyselaget. <br><br>
+
+                      <strong>CREATOR</strong> <br>
+                      En webapplikation til indtastning af data, som validerer det indsatte data op imod eksisterende data, format- og forretningsregler, 
+                      inden det leveres til MDO (Master Data Office). Foreksempel afvigelser i købs- og salgspriser, Unit of Measure, eksisterende stregkoder, 
+                      landekoder, tariffkoder mm. Bruges af Category Management teamet. <br><br>
+
+
+                      <strong>Analyselag</strong> <br>
+                      Endnu en webapplikation som bruges af Master Data Office. Modtager valideret og rengjort data fra CREATOR. 
+                      Virker som et sidste sikkerhedslag før det modtagne data importeres til ERP-systemet (Microsoft Business Central). <br><br>
+
+                      Begge er bygget med React + Tailwind CSS, forbundet til FastAPI backend.<br><br>
+
+                      <strong>Template API</strong> <br>
+                      CREATOR og Analyselag er forbundet til et FastAPI, som leverer data fra remote MS SQL Server, 
+                      sørger for datavalideringsreglerne og skriver al indsat data fra CREATOR til en lokal SQL server. <br><br>
+
+                      Alt ovenstående blev førhen båret via manuelle excel filer, hvilket var rod til mange menneskelige fejl. Foruden at det har effektiviseret arbejdsflowet hos Category Management Teamet samt Master Data Office teamet, har det sikret færre fejl i ERP-data, som har lettet driften på tværs af afdelinger i virksomheden. 
+                    </p>
+                  </v-card-text>
+
+                </v-card>
+              </v-col>
+              </v-row>
             <v-row class="gap-3 gap-md-6">
               <v-col cols="12">
                 <v-card height="100%" class="d-flex flex-column pa-3 pa-md-6" elevation="0" style="background: linear-gradient(135deg, #eceff1, #e0e0e0);">
